@@ -1,0 +1,87 @@
+
+*{font-family: helvetica; color: white;}
+
+h1{text-align: center;padding-top: 10px;}
+
+h3{text-align: left;}
+
+h4{text-align: left;}
+
+h2{text-align: center;}
+        
+p{text-align: justify; width: 60%;}
+        
+table{font-family: 'Franklin Gothic Medium';}
+
+ul, li {font-family: helvetica; color: white;text-align: justify; width: 80%;list-style: none;}
+
+
+        
+footer{}
+
+.things_to_do {
+    font-size: 20px; 
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* en caso de que lo nuevo no funcione justify-content: space-between*/
+    align-items: top;
+
+}
+
+ 
+        .cathedral {
+            display: flex;
+            justify-content: space-between; /* en caso de que lo nuevo no funcione justify-content: space-between*/
+            align-items: top;
+        }
+        
+        .places {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+        }
+
+        .claremont {
+            display: flex;
+            justify-content: space-between;
+        }
+
+          
+        body {
+    background-color: #ddd;
+    padding: 3em;
+}
+
+nav { 
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utiliza flexbox para distribuir los elementos */
+    justify-content: space-between; /* Espacio igual entre los elementos */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+}
+
+nav ul li {
+    flex-grow: 1; /* Hace que cada elemento se expanda para ocupar el mismo ancho */
+}
+
+nav ul li a {
+    display: block;
+    text-align: center; /* Centra el texto dentro del enlace */
+    padding: 15px 0; /* Ajusta el relleno para que ocupe espacio vertical */
+    color: white;
+    text-decoration: none;
+    background-color: #333; /* Fondo del enlace */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Cambia el color al pasar el mouse */
+}
+.clear{
+    clear:both;
+}

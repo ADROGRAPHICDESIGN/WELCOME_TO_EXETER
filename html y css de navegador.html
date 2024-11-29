@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;    
+    }
+
+    body{
+        font-family: 'poppins', sans-serif;
+    }
+
+    ul{
+        width: 96.91vw;
+        height: 10.55vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,);
+        background: #fff;
+    }
+
+    ul li{
+        display: inline-block;
+        transform-style: preserve-3d;
+    }
+
+    ul li a{
+        color: #171810;
+        font-size: 2.99vw;
+        text-decoration: none;
+        font-weight:  bold;
+        display: block;
+    }
+
+    ul li a div{
+        display: block;
+        padding: 3vw;
+    }
+
+    ul li a div:before{
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left:0;
+        background: #023240;
+        color: #fff;
+        padding: 3vw;
+        transition: .3s;
+        transform: rotateX('90deg') translateY(8vw);
+        transform-origin: bottom;
+    }
+
+    ul li s div: hover: before{
+        transform: rotatex(0deg) translateY(0deg);
+    }
+
+    ul li a div:after{
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        color: #171810
+        padding: 3vw;
+        transition: .3s;
+        transform: rotateX(0deg) translateY(0vw);
+        transform-origin: top;
+
+    }
+
+    ul li a div:hover:after{
+        transform: rotatex(90deg) translateY(-2vw);
+    }
+</style>
+
+</head>
+<body>
+    <ul>
+        <li><a href="#"><div title="INICIO"></div></a></li>
+        <li><a href="#"><div title="INFORMACION"></div></a></li>
+        <li><a href="#"><div title="ACTIVIDADES"></div></a></li>
+        <li><a href="#"><div title="PRECIOS"></div></a></li>
+        <li><a href="#"><div title="CONTACTO"></div></a></li>
+    </ul>
+    
+</body>
+</html>
